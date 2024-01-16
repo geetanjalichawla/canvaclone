@@ -1,7 +1,4 @@
 // Menu.tsx
-import PropTypes from 'prop-types';
-
-
 interface Category {
     name: string;
     link: string;
@@ -29,14 +26,7 @@ function SubMenu({ categories }: SubMenuProps) {
         </div>
     );
 }
-SubMenu.propTypes = {
-    categories: PropTypes.arrayOf(
-        PropTypes.shape({
-            name: PropTypes.string.isRequired,
-            link: PropTypes.string.isRequired,
-        })
-    ).isRequired,
-};
+
 
 interface MenuProps {
     isOpen: boolean;
@@ -56,14 +46,5 @@ function Menu({ isOpen, categories, setIsMenuOpen }: MenuProps) {
     );
 }
 
-Menu.propTypes = {
-    isOpen: PropTypes.bool.isRequired,
-    categories: PropTypes.arrayOf(
-        PropTypes.shape({
-            name: PropTypes.string.isRequired,
-            link: PropTypes.string.isRequired,
-        })
-    ).isRequired,
-    setIsMenuOpen: PropTypes.func.isRequired,
-};
+
 export default Menu;

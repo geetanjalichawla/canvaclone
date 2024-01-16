@@ -3,7 +3,7 @@ import { useState } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { MdOutlineSearch } from "react-icons/md";
 import { IoMdHelpCircleOutline } from "react-icons/io";
-import Menu from "../../menu";
+import Menu from "./menu";
 
 function LargeNavigation() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

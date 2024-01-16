@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import PropTypes from 'prop-types';
 
 interface ScrollTextProps {
   images: string[]; 
@@ -43,8 +42,6 @@ const ScrollText: React.FC<ScrollTextProps> = ({ images }) => {
   );
 };
 
-ScrollText.propTypes = {
-  images: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
-};
+
 
 export default ScrollText;
