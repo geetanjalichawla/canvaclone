@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import PropTypes from 'prop-types';
 
 interface ScrollTextProps {
-  images: string[]; // Assuming an array of image URLs
+  images: string[]; 
 }
 
 const ScrollText: React.FC<ScrollTextProps> = ({ images }) => {
