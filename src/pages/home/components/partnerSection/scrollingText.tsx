@@ -44,7 +44,7 @@ const ScrollText: React.FC<ScrollTextProps> = ({ images }) => {
 };
 
 ScrollText.propTypes = {
-  images: PropTypes.arrayOf(PropTypes.string).isRequired,
+  images: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
 };
 
 export default ScrollText;
