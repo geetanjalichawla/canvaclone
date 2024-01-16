@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'Open Sans', sans-serif;
+  --brand : #8b3dff;
+}
+
+
+.text-brand {
+  color: var(--brand) ;
+}
+.bg-brand {
+  background-color: var(--brand) ;
+}
+
+.react-multiple-carousel__arrow::before {
+  color: black;
+
+}
+
+.react-multiple-carousel__arrow {
+  background: white;
+}
+.react-multiple-carousel__arrow:hover {
+  background: rgb(212, 212, 212);
+}
