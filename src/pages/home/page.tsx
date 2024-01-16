@@ -1,11 +1,12 @@
 import HeroSection from "./components/HeroSection/hero"
 import LeftRightComponent from "./components/imageAndDescription/LeftRightSection"
+import Footer from "./components/layout/footer/foooter"
 import NavBar from "./components/layout/header/navbar"
-import Partner from "./components/partnerSection/patner"
+import Partner from "./components/partnerSection/partner"
 
 function Page() {
   return (
-    <>
+    <div className="w-full space-y-4 md:space-y-16 ">
     <NavBar/>
     <HeroSection/>
     <Partner/>
@@ -28,7 +29,8 @@ function Page() {
       button={<button className="bg-gray-100 text-black px-4 py-2 font-semibold">Print your creation</button>}
       photo="assets/print.webp"
     /> 
-    </>
+    <Footer/>
+    </div>
 
   )
 }
