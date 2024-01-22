@@ -1,4 +1,3 @@
-import { useState } from "react"
 import HeroSection from "./components/HeroSection/hero"
 import LeftRightComponent from "./components/imageAndDescription/LeftRightSection"
 import Footer from "./components/layout/footer/foooter"
