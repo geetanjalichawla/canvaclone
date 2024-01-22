@@ -6,15 +6,15 @@ import NavBar from "./components/layout/header/navbar"
 import Partner from "./components/partnerSection/partner"
 
 function Page() {
-  const [checkbox, setCheckbox] = useState(true);
-  const handleChange =(e: any)=>{
-    const {value} = e.target;
-    setCheckbox(value);
-  }
+  // const [checkbox, setCheckbox] = useState(true);
+  // const handleChange =(e: any)=>{
+  //   const {value} = e.target;
+  //   setCheckbox(value);
+  // }
   return (
     <div className="w-full space-y-4 md:space-y-16 ">
     <NavBar/>
-    <input  type="checkbox" checked={checkbox} onChange={handleChange}/>
+    {/* <input  type="checkbox" checked={checkbox} onChange={handleChange}/> */}
     <HeroSection/>
     <Partner/>
     <LeftRightComponent
