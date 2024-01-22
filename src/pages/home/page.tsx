@@ -1,3 +1,4 @@
+import { useState } from "react"
 import HeroSection from "./components/HeroSection/hero"
 import LeftRightComponent from "./components/imageAndDescription/LeftRightSection"
 import Footer from "./components/layout/footer/foooter"
@@ -5,9 +6,15 @@ import NavBar from "./components/layout/header/navbar"
 import Partner from "./components/partnerSection/partner"
 
 function Page() {
+  const [checkbox, setCheckbox] = useState(true);
+  const handleChange =(e: any)=>{
+    const {value} = e.target;
+    setCheckbox(value);
+  }
   return (
     <div className="w-full space-y-4 md:space-y-16 ">
     <NavBar/>
+    <input  type="checkbox" checked={checkbox} onChange={handleChange}/>
     <HeroSection/>
     <Partner/>
     <LeftRightComponent

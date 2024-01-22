@@ -1,5 +1,6 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { ImageComponent } from './ImageComponent';
 
 const HeroCarousel = () => {
     const responsive = {
@@ -88,11 +89,8 @@ const HeroCarousel = () => {
         <section className='w-full bg-white '>
             <div className=" rounded-3xl text-center w-full h-full">
                 <Carousel responsive={responsive} infinite={true} className='w-full py-10' >
-                    {skill.map((s, index) => (
-                        <div key={index} className='flex flex-col items-center p-2 relative hover:scale-110 transition-all duration-300 cursor-pointer'>
-                            <img src={s.img} alt={s.title} className='mx-auto mr-4 rounded-lg' />
-                            <h5 className={`absolute top-6  md:text-xl text-sm font-bold ${s.className}`}>{s.title}</h5>
-                        </div>
+                    {skill.map((image, index) => (
+                        <ImageComponent index={index} image={image}/>
                     ))}
                 </Carousel>
             </div>

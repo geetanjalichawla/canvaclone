@@ -5,6 +5,7 @@
 *{
   font-family: 'Open Sans', sans-serif;
   --brand : #8b3dff;
+  
 }
 
 
@@ -14,6 +15,7 @@
 .bg-brand {
   background-color: var(--brand) ;
 }
+
 
 .react-multiple-carousel__arrow::before {
   color: black;
